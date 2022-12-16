@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainUI</class>
+ <widget class="QDialog" name="mainUI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>633</width>
+    <height>430</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>deCryptio</string>
+  </property>
+  <widget class="QLabel" name="title">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>40</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>21</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="text">
+    <string>deCryptio</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>110</y>
+     <width>151</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Transaction Number</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>160</y>
+     <width>121</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Wallet Number</string>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="start_date">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>270</y>
+     <width>130</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="displayFormat">
+    <string>dd/MM/yyyy</string>
+   </property>
+   <property name="calendarPopup">
+    <bool>true</bool>
+   </property>
+   <property name="date">
+    <date>
+     <year>2022</year>
+     <month>1</month>
+     <day>11</day>
+    </date>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="end_date">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>270</y>
+     <width>130</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="displayFormat">
+    <string>dd/MM/yyyy</string>
+   </property>
+   <property name="calendarPopup">
+    <bool>true</bool>
+   </property>
+   <property name="date">
+    <date>
+     <year>2022</year>
+     <month>2</month>
+     <day>19</day>
+    </date>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="transaction">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>110</y>
+     <width>310</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="wallet">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>160</y>
+     <width>310</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="review">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>340</y>
+     <width>135</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Run and Review</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="save">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>340</y>
+     <width>135</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Run and Save</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="clear">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>340</y>
+     <width>135</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Clear form</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="tx_error">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>140</y>
+     <width>281</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="wallet_error">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>190</y>
+     <width>281</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="date">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>220</y>
+     <width>101</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Date</string>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="date_range">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>270</y>
+     <width>91</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Date Range</string>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="date_type">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>220</y>
+     <width>130</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="displayFormat">
+    <string>dd/MM/yyyy</string>
+   </property>
+   <property name="calendarPopup">
+    <bool>true</bool>
+   </property>
+   <property name="date">
+    <date>
+     <year>2022</year>
+     <month>1</month>
+     <day>11</day>
+    </date>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
